@@ -1,12 +1,13 @@
 #include <string>
 
-class person
+class Human
 {
 	private:
 		int age = 0;
 		std::string firstname = "first";
 		std::string lastname = "last";
 	public:
+		Human();
 		void setage(int);
 		int getage();
 		std::string getfirstname();
@@ -15,38 +16,42 @@ class person
 		void setlastname(std::string);
 		std::string getfullname();
 };
+Human::Human()
+{
+
+}
  
-void person::setage(int _age)
+void Human::setage(int _age)
 {
 	this->age = _age;
 }
 
-int person::getage()
+int Human::getage()
 {
 	return this->age;
 }
 
-std::string person::getfirstname()
+std::string Human::getfirstname()
 {
 	return this->firstname;
 }
 
-void person::setfirstname(std::string _first)
+void Human::setfirstname(std::string _first)
 {
 	this->firstname = _first;
 }
 
-std::string person::getlastname()
+std::string Human::getlastname()
 {
 	return this->lastname;
 }
 
-void person::setlastname(std::string _last)
+void Human::setlastname(std::string _last)
 {
 	this->lastname = _last;
 }
 
-std::string person::getfullname()
+std::string Human::getfullname()
 {
 	return this->firstname + " " + this->lastname;
 }
