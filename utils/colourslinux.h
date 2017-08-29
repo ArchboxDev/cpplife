@@ -24,3 +24,5 @@ public:
 
 Modifier white(FG_DEFAULT);
 Modifier green(FG_GREEN);
+Modifier red(FG_RED);
+Modifier blue(FG_BLUE);

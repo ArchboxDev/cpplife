@@ -20,6 +20,13 @@ int main(int argc, char const *argv[])
 	novus.setfirstname("asshole");
 	novus.setlastname("mcgee");
 	std::cout << novus.getfullname() << " is " << green << novus.getage() << white << std::endl;
+	Human hUman569;
+	hUman569.setage(32);
+	hUman569.setfirstname("EternalPain");
+	hUman569.setlastname("McEternalPainFace");
+	std::cout << hUman569.getfullname() << " is " << green << hUman569.getage() << white << std::endl;
+	hUman569.setage(33);
+	std::cout << hUman569.getfullname() << red << " died " << white << "at age " << green << hUman569.getage() << white << " from " << blue << "drug addiction" << white << std::endl;
 
 	std::cin.ignore();
 	return 0;
